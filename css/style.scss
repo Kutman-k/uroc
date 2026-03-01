@@ -1,0 +1,49 @@
+header {
+     display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e5e9eb;
+    width: 1520px;
+    height: 65px;
+    align-items: center;
+    .right, .left {
+        display: flex;
+        align-items: center;
+        
+    }
+    .left {
+        gap: 32px;
+        ul {
+            display: flex;
+            gap: 18px;
+            align-items: center;
+            a {
+                text-decoration: none;
+                font-family: "Inter", sans-serif;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 171%;
+                letter-spacing: -0.01em;
+                color: #252c32;
+            }
+            li {
+                list-style: none;
+            }
+        }
+    }
+    .right {
+        gap: 16px;
+    }
+} 
+.burger {
+    display: none;
+}
+    
+@media screen and (max-width: 960px) {
+    nav {
+        display: none;
+    }
+    .burger {
+        display: block;
+    }
+}
+    
